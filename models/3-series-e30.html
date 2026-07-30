@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>3 Series E30 — BMW Model Collection</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -18,9 +19,8 @@
 <main>
   <div class="detail">
     <div class="photo-large">
-      <img src="../images/3-series-e30.jpg" alt="3 Series E30"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e30.jpg</div>
+      <img data-base="../images/3-series-e30" alt="3 Series E30" onerror="tryNextExt(this)">
+      <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e30.*</div>
     </div>
     <div class="specs">
       <div class="brand">3 Series</div>

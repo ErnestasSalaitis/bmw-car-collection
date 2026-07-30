@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>X6 E71 — BMW Model Collection</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -18,9 +19,8 @@
 <main>
   <div class="detail">
     <div class="photo-large">
-      <img src="../images/x6-e71.jpg" alt="X6 E71"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="placeholder" style="display:none">Photo not added yet<br>images/x6-e71.jpg</div>
+      <img data-base="../images/x6-e71" alt="X6 E71" onerror="tryNextExt(this)">
+      <div class="placeholder" style="display:none">Photo not added yet<br>images/x6-e71.*</div>
     </div>
     <div class="specs">
       <div class="brand">X6</div>

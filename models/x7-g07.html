@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>X7 G07 — BMW Model Collection</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -18,9 +19,8 @@
 <main>
   <div class="detail">
     <div class="photo-large">
-      <img src="../images/x7-g07.jpg" alt="X7 G07"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="placeholder" style="display:none">Photo not added yet<br>images/x7-g07.jpg</div>
+      <img data-base="../images/x7-g07" alt="X7 G07" onerror="tryNextExt(this)">
+      <div class="placeholder" style="display:none">Photo not added yet<br>images/x7-g07.*</div>
     </div>
     <div class="specs">
       <div class="brand">X7</div>

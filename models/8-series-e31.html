@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>8 Series E31 — BMW Model Collection</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -18,9 +19,8 @@
 <main>
   <div class="detail">
     <div class="photo-large">
-      <img src="../images/8-series-e31.jpg" alt="8 Series E31"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-e31.jpg</div>
+      <img data-base="../images/8-series-e31" alt="8 Series E31" onerror="tryNextExt(this)">
+      <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-e31.*</div>
     </div>
     <div class="specs">
       <div class="brand">8 Series</div>

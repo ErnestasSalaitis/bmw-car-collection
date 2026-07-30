@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BMW Model Collection — Showcase</title>
 <link rel="stylesheet" href="assets/style.css">
+<script src="assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -27,9 +28,8 @@
   <div class="grid" id="grid">
     <a class="card" href="models/5-series-g60.html" data-brand="5 series" data-chassis="g60">
       <div class="photo">
-        <img src="images/5-series-g60.jpg" alt="5 Series G60"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/5-series-g60.jpg</div>
+        <img data-base="images/5-series-g60" alt="5 Series G60" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/5-series-g60.*</div>
       </div>
       <div class="info">
         <div class="brand">5 Series</div>
@@ -38,9 +38,8 @@
       </div>
     </a><a class="card" href="models/x5-g05.html" data-brand="x5" data-chassis="g05">
       <div class="photo">
-        <img src="images/x5-g05.jpg" alt="X5 G05"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-g05.jpg</div>
+        <img data-base="images/x5-g05" alt="X5 G05" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-g05.*</div>
       </div>
       <div class="info">
         <div class="brand">X5</div>
@@ -49,9 +48,8 @@
       </div>
     </a><a class="card" href="models/bmw-i8-i12-i15.html" data-brand="bmw i8" data-chassis="i12/i15">
       <div class="photo">
-        <img src="images/bmw-i8-i12-i15.jpg" alt="BMW i8 I12/I15"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/bmw-i8-i12-i15.jpg</div>
+        <img data-base="images/bmw-i8-i12-i15" alt="BMW i8 I12/I15" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/bmw-i8-i12-i15.*</div>
       </div>
       <div class="info">
         <div class="brand">BMW i8</div>
@@ -60,9 +58,8 @@
       </div>
     </a><a class="card" href="models/8-series-g15.html" data-brand="8 series" data-chassis="g15">
       <div class="photo">
-        <img src="images/8-series-g15.jpg" alt="8 Series G15"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-g15.jpg</div>
+        <img data-base="images/8-series-g15" alt="8 Series G15" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-g15.*</div>
       </div>
       <div class="info">
         <div class="brand">8 Series</div>
@@ -71,9 +68,8 @@
       </div>
     </a><a class="card" href="models/8-series-e31.html" data-brand="8 series" data-chassis="e31">
       <div class="photo">
-        <img src="images/8-series-e31.jpg" alt="8 Series E31"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-e31.jpg</div>
+        <img data-base="images/8-series-e31" alt="8 Series E31" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/8-series-e31.*</div>
       </div>
       <div class="info">
         <div class="brand">8 Series</div>
@@ -82,9 +78,8 @@
       </div>
     </a><a class="card" href="models/7-series-f01.html" data-brand="7 series" data-chassis="f01">
       <div class="photo">
-        <img src="images/7-series-f01.jpg" alt="7 Series F01"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/7-series-f01.jpg</div>
+        <img data-base="images/7-series-f01" alt="7 Series F01" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/7-series-f01.*</div>
       </div>
       <div class="info">
         <div class="brand">7 Series</div>
@@ -93,9 +88,8 @@
       </div>
     </a><a class="card" href="models/7-series-e65.html" data-brand="7 series" data-chassis="e65">
       <div class="photo">
-        <img src="images/7-series-e65.jpg" alt="7 Series E65"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/7-series-e65.jpg</div>
+        <img data-base="images/7-series-e65" alt="7 Series E65" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/7-series-e65.*</div>
       </div>
       <div class="info">
         <div class="brand">7 Series</div>
@@ -104,9 +98,8 @@
       </div>
     </a><a class="card" href="models/x7-g07.html" data-brand="x7" data-chassis="g07">
       <div class="photo">
-        <img src="images/x7-g07.jpg" alt="X7 G07"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/x7-g07.jpg</div>
+        <img data-base="images/x7-g07" alt="X7 G07" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/x7-g07.*</div>
       </div>
       <div class="info">
         <div class="brand">X7</div>
@@ -115,9 +108,8 @@
       </div>
     </a><a class="card" href="models/x5-g05-143.html" data-brand="x5" data-chassis="g05">
       <div class="photo">
-        <img src="images/x5-g05-143.jpg" alt="X5 G05"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-g05-143.jpg</div>
+        <img data-base="images/x5-g05-143" alt="X5 G05" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-g05-143.*</div>
       </div>
       <div class="info">
         <div class="brand">X5</div>
@@ -126,9 +118,8 @@
       </div>
     </a><a class="card" href="models/x5-e70.html" data-brand="x5" data-chassis="e70">
       <div class="photo">
-        <img src="images/x5-e70.jpg" alt="X5 E70"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-e70.jpg</div>
+        <img data-base="images/x5-e70" alt="X5 E70" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/x5-e70.*</div>
       </div>
       <div class="info">
         <div class="brand">X5</div>
@@ -137,9 +128,8 @@
       </div>
     </a><a class="card" href="models/x6-e71.html" data-brand="x6" data-chassis="e71">
       <div class="photo">
-        <img src="images/x6-e71.jpg" alt="X6 E71"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/x6-e71.jpg</div>
+        <img data-base="images/x6-e71" alt="X6 E71" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/x6-e71.*</div>
       </div>
       <div class="info">
         <div class="brand">X6</div>
@@ -148,9 +138,8 @@
       </div>
     </a><a class="card" href="models/5-series-f10.html" data-brand="5 series" data-chassis="f10">
       <div class="photo">
-        <img src="images/5-series-f10.jpg" alt="5 Series F10"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/5-series-f10.jpg</div>
+        <img data-base="images/5-series-f10" alt="5 Series F10" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/5-series-f10.*</div>
       </div>
       <div class="info">
         <div class="brand">5 Series</div>
@@ -159,9 +148,8 @@
       </div>
     </a><a class="card" href="models/6-series-e63.html" data-brand="6 series" data-chassis="e63">
       <div class="photo">
-        <img src="images/6-series-e63.jpg" alt="6 Series E63"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/6-series-e63.jpg</div>
+        <img data-base="images/6-series-e63" alt="6 Series E63" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/6-series-e63.*</div>
       </div>
       <div class="info">
         <div class="brand">6 Series</div>
@@ -170,9 +158,8 @@
       </div>
     </a><a class="card" href="models/3-series-328-pre-war-roadster.html" data-brand="3 series" data-chassis="328 (pre-war roadster)">
       <div class="photo">
-        <img src="images/3-series-328-pre-war-roadster.jpg" alt="3 Series 328 (pre-war roadster)"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-328-pre-war-roadster.jpg</div>
+        <img data-base="images/3-series-328-pre-war-roadster" alt="3 Series 328 (pre-war roadster)" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-328-pre-war-roadster.*</div>
       </div>
       <div class="info">
         <div class="brand">3 Series</div>
@@ -181,9 +168,8 @@
       </div>
     </a><a class="card" href="models/3-series-e21.html" data-brand="3 series" data-chassis="e21">
       <div class="photo">
-        <img src="images/3-series-e21.jpg" alt="3 Series E21"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e21.jpg</div>
+        <img data-base="images/3-series-e21" alt="3 Series E21" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e21.*</div>
       </div>
       <div class="info">
         <div class="brand">3 Series</div>
@@ -192,9 +178,8 @@
       </div>
     </a><a class="card" href="models/3-series-e30.html" data-brand="3 series" data-chassis="e30">
       <div class="photo">
-        <img src="images/3-series-e30.jpg" alt="3 Series E30"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e30.jpg</div>
+        <img data-base="images/3-series-e30" alt="3 Series E30" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e30.*</div>
       </div>
       <div class="info">
         <div class="brand">3 Series</div>
@@ -203,9 +188,8 @@
       </div>
     </a><a class="card" href="models/3-series-f30.html" data-brand="3 series" data-chassis="f30">
       <div class="photo">
-        <img src="images/3-series-f30.jpg" alt="3 Series F30"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-f30.jpg</div>
+        <img data-base="images/3-series-f30" alt="3 Series F30" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-f30.*</div>
       </div>
       <div class="info">
         <div class="brand">3 Series</div>
@@ -214,9 +198,8 @@
       </div>
     </a><a class="card" href="models/bmw-m1-e26.html" data-brand="bmw m1" data-chassis="e26">
       <div class="photo">
-        <img src="images/bmw-m1-e26.jpg" alt="BMW M1 E26"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/bmw-m1-e26.jpg</div>
+        <img data-base="images/bmw-m1-e26" alt="BMW M1 E26" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/bmw-m1-e26.*</div>
       </div>
       <div class="info">
         <div class="brand">BMW M1</div>
@@ -225,9 +208,8 @@
       </div>
     </a><a class="card" href="models/1-series-e87.html" data-brand="1 series" data-chassis="e87">
       <div class="photo">
-        <img src="images/1-series-e87.jpg" alt="1 Series E87"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/1-series-e87.jpg</div>
+        <img data-base="images/1-series-e87" alt="1 Series E87" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/1-series-e87.*</div>
       </div>
       <div class="info">
         <div class="brand">1 Series</div>
@@ -236,9 +218,8 @@
       </div>
     </a><a class="card" href="models/3-series-e91-touring.html" data-brand="3 series" data-chassis="e91 (touring)">
       <div class="photo">
-        <img src="images/3-series-e91-touring.jpg" alt="3 Series E91 (Touring)"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e91-touring.jpg</div>
+        <img data-base="images/3-series-e91-touring" alt="3 Series E91 (Touring)" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-series-e91-touring.*</div>
       </div>
       <div class="info">
         <div class="brand">3 Series</div>
@@ -247,9 +228,8 @@
       </div>
     </a><a class="card" href="models/m2-g87.html" data-brand="m2" data-chassis="g87">
       <div class="photo">
-        <img src="images/m2-g87.jpg" alt="M2 G87"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/m2-g87.jpg</div>
+        <img data-base="images/m2-g87" alt="M2 G87" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/m2-g87.*</div>
       </div>
       <div class="info">
         <div class="brand">M2</div>
@@ -258,9 +238,8 @@
       </div>
     </a><a class="card" href="models/z4-g29.html" data-brand="z4" data-chassis="g29">
       <div class="photo">
-        <img src="images/z4-g29.jpg" alt="Z4 G29"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/z4-g29.jpg</div>
+        <img data-base="images/z4-g29" alt="Z4 G29" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/z4-g29.*</div>
       </div>
       <div class="info">
         <div class="brand">Z4</div>
@@ -269,9 +248,8 @@
       </div>
     </a><a class="card" href="models/m6-gt3-f13-based-race-car.html" data-brand="m6 gt3" data-chassis="f13-based race car">
       <div class="photo">
-        <img src="images/m6-gt3-f13-based-race-car.jpg" alt="M6 GT3 F13-based race car"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/m6-gt3-f13-based-race-car.jpg</div>
+        <img data-base="images/m6-gt3-f13-based-race-car" alt="M6 GT3 F13-based race car" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/m6-gt3-f13-based-race-car.*</div>
       </div>
       <div class="info">
         <div class="brand">M6 GT3</div>
@@ -280,9 +258,8 @@
       </div>
     </a><a class="card" href="models/i4-g26.html" data-brand="i4" data-chassis="g26">
       <div class="photo">
-        <img src="images/i4-g26.jpg" alt="i4 G26"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/i4-g26.jpg</div>
+        <img data-base="images/i4-g26" alt="i4 G26" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/i4-g26.*</div>
       </div>
       <div class="info">
         <div class="brand">i4</div>
@@ -291,9 +268,8 @@
       </div>
     </a><a class="card" href="models/m4-g82.html" data-brand="m4" data-chassis="g82">
       <div class="photo">
-        <img src="images/m4-g82.jpg" alt="M4 G82"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/m4-g82.jpg</div>
+        <img data-base="images/m4-g82" alt="M4 G82" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/m4-g82.*</div>
       </div>
       <div class="info">
         <div class="brand">M4</div>
@@ -302,9 +278,8 @@
       </div>
     </a><a class="card" href="models/m4-dtm-f82-g82-based.html" data-brand="m4 dtm" data-chassis="f82/g82-based">
       <div class="photo">
-        <img src="images/m4-dtm-f82-g82-based.jpg" alt="M4 DTM F82/G82-based"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/m4-dtm-f82-g82-based.jpg</div>
+        <img data-base="images/m4-dtm-f82-g82-based" alt="M4 DTM F82/G82-based" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/m4-dtm-f82-g82-based.*</div>
       </div>
       <div class="info">
         <div class="brand">M4 DTM</div>
@@ -313,9 +288,8 @@
       </div>
     </a><a class="card" href="models/3-0-csl-g82-based.html" data-brand="3.0 csl" data-chassis="g82-based">
       <div class="photo">
-        <img src="images/3-0-csl-g82-based.jpg" alt="3.0 CSL G82-based"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-0-csl-g82-based.jpg</div>
+        <img data-base="images/3-0-csl-g82-based" alt="3.0 CSL G82-based" onerror="tryNextExt(this)">
+        <div class="placeholder" style="display:none">Photo not added yet<br>images/3-0-csl-g82-based.*</div>
       </div>
       <div class="info">
         <div class="brand">3.0 CSL</div>

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>M6 GT3 F13-based race car — BMW Model Collection</title>
 <link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/photo-fallback.js" defer></script>
 </head>
 <body>
 <nav>
@@ -18,9 +19,8 @@
 <main>
   <div class="detail">
     <div class="photo-large">
-      <img src="../images/m6-gt3-f13-based-race-car.jpg" alt="M6 GT3 F13-based race car"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="placeholder" style="display:none">Photo not added yet<br>images/m6-gt3-f13-based-race-car.jpg</div>
+      <img data-base="../images/m6-gt3-f13-based-race-car" alt="M6 GT3 F13-based race car" onerror="tryNextExt(this)">
+      <div class="placeholder" style="display:none">Photo not added yet<br>images/m6-gt3-f13-based-race-car.*</div>
     </div>
     <div class="specs">
       <div class="brand">M6 GT3</div>
